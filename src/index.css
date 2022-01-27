@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap');
+
+.borde {
+  border: 1px solid red;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.borde1 {
+  border: 1px solid green;
+  background-color: green;
 }
+
+.borde-nav-1:hover {
+  border: 1px solid #095590;
+}
+
+.borde-nav-2:hover {
+  border: 1px solid white;
+  padding: .6rem;
+  border-radius: 5px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #FCFDFF;
+}
+
+.fuente-principal {
+  color: #095590;
+}
+
+.fuente-secundaria {
+  color: #59A5E3;
+}
+
+.fuente-gruesa {
+  font-weight: bold;
+}
+
+.fuente-grande {
+  font-size: 2rem;
+
+}
+
+.fondo-principal {
+  background-color: #095590;
+}
+
+.fondo-secundario {
+  background-color: #59A5E3;
+}
+
+.fondo-secundario:hover {
+  background-color: #095590;
+}
+
+.borde-boton {
+  border: 1px solid #095590;
+}
+
+.borde-boton:hover {
+  border: 1px solid #59A5E3;
+}
+
+.centrar {
+  margin: 0 auto;
+}
+
+.imagen-bg-home {
+  position: absolute;
+  right: 0rem;
+  top: 40%;
+  z-index: -2;
+  width: 42%;
+}
+
+@media (min-width: 768px) {
+  .imagen-bg-home  {
+    top: 0;
+  }
+}
+
+.imagen-carcollage-home {
+  position: absolute;
+  z-index: 1;
+  top: 12%;
+}
+
+.ancho-auto {
+  width: auto;
+}
+
+
